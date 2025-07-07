@@ -7,6 +7,7 @@
         Address: <input type="text" name="address"/><br/>
         Phone No: <input type="text" name="phone"><br/>
         Email: <input type="email" name="email"><br/>
+        Password: <input type="password" name="password"><br/>
         <input type="submit" value="Register"/>
     </form>
 </body>

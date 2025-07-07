@@ -33,14 +33,14 @@ body {
 }
 
 .action-btn {
-    padding: 32px 70px;         /* More padding = bigger button */
-    font-size: 20px;            /* Bigger text */
+    padding: 32px 70px;        
+    font-size: 20px;            
     background-color: #f77f00;
     color: white;
     border: none;
-    border-radius: 10px;        /* Slightly more rounded corners */
+    border-radius: 10px;      
     cursor: pointer;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Stronger shadow */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); 
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
