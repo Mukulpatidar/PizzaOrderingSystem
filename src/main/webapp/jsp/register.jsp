@@ -1,14 +1,15 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java"%>
 <html>
-<head><title>Register</title></head>
+<head>
+<title>Register</title>
+</head>
 <body>
-    <form action="../RegisterServlet" method="post">
-        Name: <input type="text" name="name"/><br/>
-        Address: <input type="text" name="address"/><br/>
-        Phone No: <input type="text" name="phone"><br/>
-        Email: <input type="email" name="email"><br/>
-        Password: <input type="password" name="password"><br/>
-        <input type="submit" value="Register"/>
-    </form>
+	<form action="../register" method="post">
+		Name: <input type="text" name="name" /><br /> Email: <input
+			type="email" name="email"><br /> Password: <input
+			type="password" name="password"><br /> Contact: <input
+			type="text" name="contact"><br /> Address: <input type="text"
+			name="address" /><br /> <input type="submit" value="Register" />
+	</form>
 </body>
 </html>
