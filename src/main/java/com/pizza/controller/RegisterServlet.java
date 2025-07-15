@@ -33,14 +33,14 @@ public class RegisterServlet extends HttpServlet {
 
 			int rows = ps.executeUpdate();
 			if (rows > 0) {
-				response.sendRedirect("login.jsp");
+				response.sendRedirect("jsp/login.jsp");
 			} else {
-				response.sendRedirect("register.jsp?error=1");
+				response.sendRedirect("register.jsp");
 			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			response.sendRedirect("register.jsp?error=1");
+			response.sendRedirect("register.jsp");
 		}
 	}
 }
