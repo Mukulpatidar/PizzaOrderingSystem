@@ -23,8 +23,9 @@ public class LoginServlet extends HttpServlet {
 
             if (rs.next()) {
                 HttpSession session = request.getSession();
-                session.setAttribute("user", rs.getString("name"));
-                response.sendRedirect("jsp/dsahboard.jsp");
+                session.setAttribute("userEmail", rs.getString("email")); // ✅ Match dashboard.jsp
+                session.setAttribute("userName", rs.getString("name"));   // optional
+                response.sendRedirect("jsp/dashboard.jsp");
             } else {
                 response.sendRedirect("jsp/login.jsp?error=1");
             }

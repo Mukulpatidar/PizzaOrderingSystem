@@ -2,11 +2,14 @@
 <%@ page session="true" %>
 <%
     String email = (String) session.getAttribute("userEmail");
+    String name = (String) session.getAttribute("userName");
     if (email == null) {
         response.sendRedirect("login.jsp");
         return;
     }
 %>
+<h2>Welcome, <%= name %>!</h2>
+
 <html>
 <head>
     <title>User Dashboard</title>
@@ -47,7 +50,7 @@
 </head>
 <body>
     <div class="dashboard">
-        <h2>Welcome, <%= email %>!</h2>
+       
         <a href="order.jsp">Order Pizza</a>
         <a href="profile.jsp">View Profile</a>
         <a href="logout.jsp">Logout</a>
