@@ -72,7 +72,7 @@
             <div class="error">Registration failed. Please try again or check input.</div>
         <% } %>
 
-        <form action="/PizzaOrderingSystem/RegisterServlet" method="post">
+       <form action="../register" method="post">
             <input type="text" name="name" placeholder="Full Name" required />
             <input type="email" name="email" placeholder="Email Address" required />
             <input type="password" name="password" placeholder="Password" required />
